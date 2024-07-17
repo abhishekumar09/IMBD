@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import {BrowserRouter as Router,Routes, Route} from "react-router-dom";
-import './App.css'
-
+import './App.css';
+import Headers from "./components/Header/header";
 function App() {
 
   return (
     <>
     <div className="App">
       <Router>
+        <Headers></Headers>
         <Routes>
           <Route index element={<h1>Hello</h1>}></Route>
           <Route path="movie/:id" element={<h2>Movie id</h2>}></Route>
